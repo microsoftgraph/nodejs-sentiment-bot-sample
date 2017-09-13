@@ -14,7 +14,7 @@
 
 This sample shows how to build a [Microsoft Bot Framework](https://dev.botframework.com/) bot that connects to [Microsoft Graph](https://developer.microsoft.com/en-us/graph/), searches through email messages, and performs sentiment analysis on those messages by using the [Microsoft Text Analytics cognitive service](https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/quick-start).
 
-![Microsoft Graph Connect Sample for Node.js screenshot](./readme-imgs/BotPreview.png)
+![Microsoft Graph Connect Sample for Node.js screenshot](./readme-images/BotPreview.png)
 
 ## Prerequisites
 
