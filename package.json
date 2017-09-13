@@ -1,0 +1,27 @@
+{
+  "name": "microsoft-graph-bot-quickstart-luis-node",
+  "version": "1.0.0",
+  "description": "Quickstart template for building a bot that connects to the Microsoft Graph and uses LUIS with NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "init": "npm install",
+    "build": "tsc -p ./",
+    "start": "npm run build && node ./src/server/server.js"
+  },
+  "author": "richdizz",
+  "license": "MIT",
+  "dependencies": {
+    "botbuilder": "3.8.4",
+    "botauth": "0.2.12",
+    "dotenv": "^2.0.0",
+    "restify": "^4.3.0",
+    "express": "4.15.3",
+    "express-session": "1.15.3",
+    "passport-azure-ad": "3.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.52",
+    "@types/restify": "^2.0.35",
+    "@types/express": "4.0.35"
+  }
+}

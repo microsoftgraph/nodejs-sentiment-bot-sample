@@ -1,0 +1,255 @@
+{
+  "luis_schema_version": "2.1.0",
+  "versionId": "0.1",
+  "name": "SearchBot",
+  "desc": "",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "None"
+    },
+    {
+      "name": "Search"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Source"
+    },
+    {
+      "name": "Term"
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "bing_entities": [],
+  "actions": [],
+  "model_features": [],
+  "regex_features": [],
+  "utterances": [
+    {
+      "text": "search linkedin for yina arenas",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 20,
+          "endPos": 30
+        },
+        {
+          "entity": "Source",
+          "startPos": 7,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "search dynamics for roland hofmann",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 20,
+          "endPos": 33
+        },
+        {
+          "entity": "Source",
+          "startPos": 7,
+          "endPos": 14
+        }
+      ]
+    },
+    {
+      "text": "search office 365 for contoso",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 22,
+          "endPos": 28
+        },
+        {
+          "entity": "Source",
+          "startPos": 7,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "search office 365 for richard dizerega",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 22,
+          "endPos": 37
+        },
+        {
+          "entity": "Source",
+          "startPos": 7,
+          "endPos": 16
+        }
+      ]
+    },
+    {
+      "text": "find contoso in dynamics",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 5,
+          "endPos": 11
+        },
+        {
+          "entity": "Source",
+          "startPos": 16,
+          "endPos": 23
+        }
+      ]
+    },
+    {
+      "text": "find mat velloso in office 365",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 5,
+          "endPos": 15
+        },
+        {
+          "entity": "Source",
+          "startPos": 20,
+          "endPos": 29
+        }
+      ]
+    },
+    {
+      "text": "look for anne wallace in linkedin",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 9,
+          "endPos": 20
+        },
+        {
+          "entity": "Source",
+          "startPos": 25,
+          "endPos": 32
+        }
+      ]
+    },
+    {
+      "text": "look for lily nguyen in office 365",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 9,
+          "endPos": 19
+        },
+        {
+          "entity": "Source",
+          "startPos": 24,
+          "endPos": 33
+        }
+      ]
+    },
+    {
+      "text": "locate david shen in office 365",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 7,
+          "endPos": 16
+        },
+        {
+          "entity": "Source",
+          "startPos": 21,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "locate fabrikam in dynamics",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 7,
+          "endPos": 14
+        },
+        {
+          "entity": "Source",
+          "startPos": 19,
+          "endPos": 26
+        }
+      ]
+    },
+    {
+      "text": "search for contoso in crm",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 11,
+          "endPos": 17
+        },
+        {
+          "entity": "Source",
+          "startPos": 22,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "find jt fletcher in facebook",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 5,
+          "endPos": 15
+        },
+        {
+          "entity": "Source",
+          "startPos": 20,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "find james garner in office 365",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 5,
+          "endPos": 16
+        },
+        {
+          "entity": "Source",
+          "startPos": 21,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "search for cammie lee in linkedin",
+      "intent": "Search",
+      "entities": [
+        {
+          "entity": "Term",
+          "startPos": 11,
+          "endPos": 20
+        },
+        {
+          "entity": "Source",
+          "startPos": 25,
+          "endPos": 32
+        }
+      ]
+    }
+  ]
+}
