@@ -4,8 +4,9 @@
 
 * [Introduction](#introduction)
 * [Prerequisites](#prerequisites)
-* [Register the application](#register-the-application)
-* [Build and run the sample](#build-and-run-the-sample)
+* [Register the web application](#register-the-web-application)
+* [Build the sample](#build-and-run-the-sample)
+* [Run the sample](#run-the-sample)
 * [Questions and comments](#questions-and-comments)
 * [Contributing](#contributing)
 * [Additional resources](#additional-resources)
@@ -26,7 +27,7 @@ To use the Microsoft Graph Connect Sample for Node.js, you need the following:
  * A [Microsoft Azure Account](https://azure.microsoft.com/en-us/free/)
  * A [Language Understanding Intelligent Service Account](https://www.luis.ai/)
 
-## Register the application
+## Register the web application
 
 1. Sign into the [App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 
@@ -50,13 +51,13 @@ To use the Microsoft Graph Connect Sample for Node.js, you need the following:
 
 9. Choose **Save**.
 
-## Build and run the sample
+## Build the sample
 
-1. Download or clone the Microsoft Graph Connect Sample for Node.js.
+1. Download or clone this repo.
 
-2. Using your favorite IDE, open **utils/config.js**.
+2. Using your favorite IDE, open the **.env** file in the root directory of the repo.
 
-3. Replace the **client_id** and **client_secret** placeholder values with the Application Id and Application secret that you copied during app registration.
+3. Replace the **ENTER_YOUR_CLIENT_ID** and **ENTER_YOUR_CLIENT_SECRET** placeholder values with the application Id and application secret that you copied when you created your web application registration.
 
 4. In a command prompt, run the following command in the root directory. This installs the project dependencies.
 
@@ -66,15 +67,18 @@ To use the Microsoft Graph Connect Sample for Node.js, you need the following:
 
   ```npm start```
 
-6. Navigate to `http://localhost:3000` in your web browser.
+6. Launch the [Bot Framework Emulator](https://docs.microsoft.com/en-us/bot-framework/debug-bots-emulator).
 
 7. Choose the **Connect** button.
 
-8. Sign in with your personal or work or school account and grant the requested permissions.
+8. Enter the messaging endpoint for the bot project: https://localhost:3980/api/messages but could be a different port. Leave the Microsoft App ID and Microsoft App Password values blank. These are for published bots.
 
-9. Optionally edit the recipient's email address, and then choose the **Send mail** button. When the mail is sent, a Success message is displayed below the button.
+9. Choose the **Connect** button. 
 
-> Note: To understand the code for calling the Microsoft Graph API in a Node.js app, see [Get started with Microsoft Graph in a Node.js app](https://graph.microsoft.io/en-us/docs/platform/nodejs).
+## Run the sample
+
+1. Type a query in this form: **Search Office 365 for Graph**.
+2. Follow the prompts to log in. Type additional queries to see the cognitive service's sentimental analysis at work.
 
 ## Questions and comments
 
