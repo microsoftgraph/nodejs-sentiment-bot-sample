@@ -158,4 +158,4 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 - [Microsoft Graph](https://graph.microsoft.io)
 
 ## Copyright
-Copyright (c) 2016 Microsoft. All rights reserved.
+Copyright (c) 2017 Microsoft. All rights reserved.
