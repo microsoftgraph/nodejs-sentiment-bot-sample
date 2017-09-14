@@ -64,7 +64,7 @@ In addition to these prerequisites, you'll need to [get a subscription key for t
 
 4. Choose **Import App**
 
-5. In the popup, browse to the [SearchBotLUIS.json](./SearchBotLuis.json) file in the root directory of this repo.
+5. In the popup, browse to the [SearchBotLUIS.json](./SearchBotLUIS.json) file in the root directory of this repo.
 
 6. Choose the **Import** button. You'll automatically navigate to the dashboard page of your new app.
 
