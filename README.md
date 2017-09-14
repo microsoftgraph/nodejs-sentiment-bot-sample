@@ -7,7 +7,7 @@
 * [Get a key for the Text Analytics API](#get-a-key-for-the-text-analytics-api) 
 * [Publish the LUIS model](#publish-the-luis-model)
 * [Register the web application](#register-the-web-application)
-* [Build the sample](#build-and-run-the-sample)
+* [Build the sample](#build-the-sample)
 * [Run the sample](#run-the-sample)
 * [Questions and comments](#questions-and-comments)
 * [Contributing](#contributing)
@@ -51,7 +51,7 @@ In addition to these prerequisites, you'll need to [get a subscription key for t
 
 10. After you've created your subscription, navigate to your subscription and select **Keys** under the **Resource Management** section of the center pane.
 
-11. Copy the value of the first key ("Key 1"). You'll use this value in the [Build the sample](#build-and-run-the-sample) section.
+11. Copy the value of the first key ("Key 1"). You'll use this value in the [Build the sample](#build-the-sample) section.
 
 
 ## Publish the LUIS model
@@ -73,7 +73,7 @@ In addition to these prerequisites, you'll need to [get a subscription key for t
 8. Select the default **BootstrapKey** option as the value for **Endpoint key**, and then select the **Publish** button.
 ![Microsoft Graph Sentiment Bot screenshot](./readme-images/PublishLUISApp.png)
 
-9. Copy the **Endpoint url** value. You'll use this value in the [Build the sample](#build-and-run-the-sample) section.
+9. Copy the **Endpoint url** value. You'll use this value in the [Build the sample](#build-the-sample) section.
 
 10. Select **Train and Test** in the left menu to go to a page where you can run test queries against your published model. Type **Search Office 365 for Graph** in the test utterance pane to verify that your new application is finding an intent for this query.
 
