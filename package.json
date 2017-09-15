@@ -17,7 +17,9 @@
     "restify": "^4.3.0",
     "express": "4.15.3",
     "express-session": "1.15.3",
-    "passport-azure-ad": "3.0.6"
+    "passport-azure-ad": "3.0.6",
+    "@microsoft/microsoft-graph-client": "https://github.com/microsoftgraph/msgraph-sdk-javascript.git",
+    "@microsoft/microsoft-graph-types": "https://github.com/microsoftgraph/msgraph-typescript-typings.git"
   },
   "devDependencies": {
     "@types/node": "^6.0.52",

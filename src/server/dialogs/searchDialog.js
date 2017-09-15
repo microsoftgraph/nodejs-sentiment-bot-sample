@@ -1,8 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const builder = require("botbuilder");
-const httpHelper_1 = require("../helpers/httpHelper");
 const sentimentHelper_1 = require("../helpers/sentimentHelper");
+const MicrosoftGraphClient = require("@microsoft/microsoft-graph-client");
 class searchDialog {
     constructor(authHelper) {
         this.authHelper = authHelper;
@@ -14,22 +14,32 @@ class searchDialog {
             next();
         }, authHelper.getAccessToken(), (session, results, next) => {
             if (results.response != null) {
-                let headers = {
-                    Accept: 'application/json',
-                    Authorization: 'Bearer ' + results.response
-                };
-                let endpoint = `/v1.0/me/messages?$search="${encodeURIComponent(this.term.entity)}"&$select=bodyPreview&$top=5`;
-                httpHelper_1.HttpHelper.getJson(headers, 'graph.microsoft.com', endpoint).then(function (data) {
+                var client = MicrosoftGraphClient.Client.init({
+                    authProvider: (done) => {
+                        done(null, results.response);
+                    }
+                });
+                let searchQuery = `$search="${encodeURIComponent(this.term.entity)}"`;
+                var messages;
+                client
+                    .api('me/messages')
+                    .top(5)
+                    .query(searchQuery)
+                    .select('bodyPreview')
+                    .get()
+                    .then((res) => {
+                    messages = res.value;
                     let text = [];
-                    for (var i = 0; i < data.value.length; i++) {
-                        text.push(data.value[i].bodyPreview);
+                    for (var i = 0; i < messages.length; i++) {
+                        text.push(messages[i].bodyPreview);
                     }
                     sentimentHelper_1.SentimentHelper.getSentimentScore(text).then((score) => {
                         session.endConversation(`Sentiment Score: ${score}`);
                     }, (err) => {
                         session.endConversation(`Error occurred: ${err}`);
                     });
-                }).catch(function (err) {
+                }).catch((err) => {
+                    console.log(err);
                     session.endConversation(`Error occurred: ${err}`);
                 });
             }
