@@ -21,8 +21,7 @@ export class searchDialog implements IDialog {
             authHelper.getAccessToken(),
             (session, results, next) => {
                 if (results.response != null) {
-                    // Make a call to Microsoft Graph to search messages
-                    // using the Microsoft Graph SDK and Typings library.
+                    // Create a client to call Microsoft Graph.
                     var client = MicrosoftGraphClient.Client.init({
                         authProvider: (done) => {
                             done(null, results.response);
