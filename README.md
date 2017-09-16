@@ -31,7 +31,7 @@ In addition to these prerequisites, you'll need to [get a subscription key for t
 
 ## Get a key for the Text Analytics API
 
-1. Sign in to the [Azure Portal](https://portal.azure.com]).
+1. Sign in to the [Azure Portal](https://portal.azure.com).
 
 2. Choose **More services** at the bottom of the left column of the page.
 
