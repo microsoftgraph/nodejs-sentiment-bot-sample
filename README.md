@@ -124,11 +124,9 @@ In addition to these prerequisites, you'll need to [get a subscription key for t
 
 8. Launch the [Bot Framework Emulator](https://docs.microsoft.com/en-us/bot-framework/debug-bots-emulator).
 
-9. Choose the **Connect** button.
+9. Enter the messaging endpoint for this bot project: https://localhost:3980/api/messages. Leave the Microsoft App ID and Microsoft App Password values blank. These are for published bots.
 
-10. Enter the messaging endpoint for this bot project: https://localhost:3980/api/messages. Leave the Microsoft App ID and Microsoft App Password values blank. These are for published bots.
-
-11. Choose the **Connect** button. 
+10. Choose the **Connect** button. 
 
 ## Run the sample
 
