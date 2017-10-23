@@ -80,7 +80,7 @@ In addition to these prerequisites, you'll need to [get a subscription key for t
 
 ## Register the web application
 
-1. Sign into the [App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.u
+1. Sign into the [App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
 
 2. Choose **Add an app**.
 
