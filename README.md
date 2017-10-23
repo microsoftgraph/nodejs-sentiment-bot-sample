@@ -22,6 +22,7 @@ This sample shows how to build a [Microsoft Bot Framework](https://dev.botframew
 To use the Microsoft Graph Connect Sample for Node.js, you need the following:
 
  * [Node.js](https://nodejs.org/)
+ * [TypeScript](http://www.typescriptlang.org/)
  * The [Bot Framework Emulator](https://docs.microsoft.com/en-us/bot-framework/debug-bots-emulator)
  * Either a [Microsoft account](https://www.outlook.com/) or a [work or school account](http://dev.office.com/devprogram)
  * A [Microsoft Azure Account](https://azure.microsoft.com/en-us/free/)
