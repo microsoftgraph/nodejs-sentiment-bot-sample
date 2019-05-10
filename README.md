@@ -80,27 +80,25 @@ In addition to these prerequisites, you'll need to [get a subscription key for t
 
 ## Register the web application
 
-1. Sign into the [App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.
+1. Sign into the [Azure application registration portal](https://go.microsoft.com/fwlink/?linkid=2083908) using either your personal or work or school account.
 
-2. Choose **Add an app**.
+2. Choose **New registration**.
 
-3. Enter a name for the app, and choose **Create application**. 
+3. Enter a name for the app. For **Supported account types**, select **Accounts in any organizational directory and personal Microsoft accounts (e.g. Skype, Xbox, Outlook.com)**.
+
+4. Enter *https://localhost:3980/botauth/aadv2/callback* as the Redirect URI (Web).
+
+5. Choose **Register**.
 	
-   The registration page displays, listing the properties of your app.
+   The app overview page displays, listing the properties of your app.
 
-4. Copy the Application Id. This is the unique identifier for your app. 
+6. Copy the Application (client) ID from the overview page. This is the unique identifier for your app.
 
-5. Under **Application Secrets**, choose **Generate New Password**. Copy the password from the **New password generated** dialog.
+7. Go to the **Certificates & secrets** page under **Manage**. Choose **New client secret**, give it a description and expiration date, and then select **Add**.
 
-   You'll use the application ID and secret to configure the sample app in the next section. 
+8. Copy and save the new client secret's value. This is the only time you will be able to see the client secret.
 
-6. Under **Platforms**, choose **Add Platform**.
-
-7. Choose **Web**.
-
-8. Enter *https://localhost:3980/botauth/aadv2/callback* as the Redirect URI. 
-
-9. Choose **Save**.
+   You'll use the application ID and client secret to configure the sample app in the next section.
 
 ## Build the sample
 
