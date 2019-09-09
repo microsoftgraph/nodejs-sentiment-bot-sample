@@ -9,7 +9,7 @@ extensions:
   contentType: samples
   technologies:
   - Microsoft Graph
-  - Microsoft Bot Framework
+  - Microsoft Bot Framework 
   createdDate: 9/13/2017 10:47:10 AM
 ---
 # Microsoft Graph Sentiment Analysis Bot
