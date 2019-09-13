@@ -5,6 +5,7 @@ products:
 languages:
 - nodejs
 - typescript
+description: "Use Microsoft Graph, Microsoft Cognitive Services, and the Microsoft Bot Framework to do sentiment analysis in a NodeJS web application."
 extensions:
   contentType: samples
   technologies:
