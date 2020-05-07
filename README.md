@@ -1,19 +1,10 @@
----
-page_type: sample
-products:
-- ms-graph
-languages:
-- nodejs
-- typescript
-description: "Use Microsoft Graph, Microsoft Cognitive Services, and the Microsoft Bot Framework to do sentiment analysis in a NodeJS web application."
-extensions:
-  contentType: samples
-  technologies:
-  - Microsoft Graph
-  - Microsoft Bot Framework 
-  createdDate: 9/13/2017 10:47:10 AM
----
 # Microsoft Graph Sentiment Analysis Bot
+
+## IMPORTANT
+
+**This project is being archived. As part of the archival process, we're closing all open issues and pull requests.**
+
+**You can continue to use this sample "as-is", but it won't be maintained moving forward. We apologize for any inconvenience.**
 
 ## Table of contents
 
